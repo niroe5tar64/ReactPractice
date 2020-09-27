@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>React</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+    integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg=="
+    crossorigin="anonymous"></script>
+</head>
+<h1>React</h1>
+<div id="root">wait...</div>
+<script type="text/babel">
+  let dom = document.querySelector('#root');
+
+  const msg = {
+    fontSize: "20pt",
+    fontWeight: "bold",
+    color: "white",
+    backgroundColor: "darkblue"
+  };
+
+  let el = (
+    <div>
+      <Welcome />
+    </div>
+  );
+
+  ReactDOM.render(el, dom);
+</script>
+
+
+</html>
