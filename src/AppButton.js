@@ -32,7 +32,7 @@ class AppButton extends Component {
   render() {
     return (
       <div>
-        <h1>React</h1>
+        <h1>AppButton</h1>
         <p style={this.state.msgStyle}>{this.state.msg}</p>
         <button style={this.state.btnStyle} onClick={this.doAction}>
           Click!

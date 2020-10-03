@@ -15,20 +15,19 @@ class AppStateSample extends Component {
     this.state = {
       msg: 'StateMessage',
     };
+
     setInterval(() => {
       this.setState((state) => ({
         msg: state.msg + '!',
       }));
     }, 3000);
-
-    console.log('constructor');
   }
 
   render() {
     console.log('render');
     return (
       <div>
-        <h1>React</h1>
+        <h1>AppStateSample</h1>
         <p style={this.msgStyle}>{this.state.msg}</p>
         <p style={this.msgStyle}>{this.props.msg}</p>
       </div>
